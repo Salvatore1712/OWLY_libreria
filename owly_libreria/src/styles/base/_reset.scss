@@ -1,0 +1,114 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset font styles and enable smooth vertical rhythm */
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  hanging-punctuation: first last;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Respect user's reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset anchors */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Make images/media easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Avoid text overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Balance headline wrapping */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Remove default fieldset styling */
+fieldset {
+  border: none;
+}
+
+/* Root stacking context for #root/#app */
+#root,
+#app {
+  isolation: isolate;
+}

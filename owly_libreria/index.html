@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./src/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./src/assets/favicon/site.webmanifest" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>owly_libreria</title>
     <!-- FONT -->
@@ -12,7 +18,64 @@
 
   </head>
   <body>
-    <div id="app"></div>
+
+    <div id="container">
+      <!-- HEADER -->
+      <header class="header">
+        <img src="./src/assets/logo_owly_desktop.svg" alt="logo libreria owly" width="200" class="header__image">
+        <span class="header__menu__icon"></span>
+        <nav class="header__menu hideMenu">
+          <ul class="header__menu__list">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./chisimao.html">CHI SIAMO</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- SECTION HERO -->
+    <section class="hero">
+      <h1 class="hero__title-big">La libreria dei piccoli grandi lettori</h1>
+      <h2 class="hero__title-small">Libri, storie e attività per crescere, sognare e imparare ogni giorno con la gioia di leggere</h2>
+
+      <!-- search bar -->
+      <input type="text" name="inputSearch" id="inputSearch" placeholder="Cerca il tuo libro per genere" class="hero__searchBar">
+      <button type="submit" class="hero__buttonSearch" id="btnSearch">CERCA</button>
+    </section>
+
+    <!-- SECTION LIBRI IN EVIDENZA -->
+    <section class="books">
+      <h3 class="books__title">Libri in evidenza</h3>
+<!-- 
+      <div class="cards">
+        
+        <h4 class="cards__title">Titolo</h4>
+        <span class="arrow">▷</span>
+        <div class="cards__descriprion">
+          <p class="cards__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores dolorem reprehenderit dolores minus itaque ipsum officiis ut repudiandae ipsam.</p>
+        </div>
+      </div>
+          
+      </div> -->
+    </section>
+
+
+    <!-- SECTION BIO -->
+    <section class="bio">
+      <img src="./src/assets/kids illustration.svg" alt="illustrazione bambini che gioiscono" class="bio__image">
+      <h3 class="bio__title">Da dove nasce l'idea</h3>
+      <p class="bio__text">Dopo anni di esperienza come insegnanti, i fondatori hanno vissuto in prima persona le difficoltà quotidiane della scuola primaria: 
+        dalla necessità di strumenti più efficaci per l'apprendimento al supporto personalizzato per gli studenti, fino alla gestione delle comunicazioni con le famiglie.<br><br>
+        Hanno così deciso di creare una piattaforma che rispondesse ai reali bisogni di docenti, alunni e genitori, semplificando la gestione scolastica e rendendo 
+        l'insegnamento più interattivo, accessibile ed efficace.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a href="www.salvatorederoma.it" class="footer__link">salvatorederoma.it</a><p>2026 © - start2impact project</p>
+    </footer>
+
+    <!-- SCRIPT -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

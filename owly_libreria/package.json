@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "scss": "sass --watch --no-source-map src/styles/main.scss:src/style.css",
+    "scss:build": "sass --no-source-map src/styles/main.scss:src/style.css"
   },
   "devDependencies": {
     "sass": "^1.101.0",

@@ -1,0 +1,20 @@
+//VARIABILI
+@use "../abstracts/variables" as *;
+
+//STILE FOOTER
+.footer {
+    width: 100%;
+    background-color: $evergreen-black;
+    color: white;
+    font-size: $font-size-base;
+    padding: 8px;
+    font-weight: 400;
+    text-align: center;
+    margin: 48px auto 0 auto;
+    position: relative;
+    bottom: 0;
+
+    &__link {
+        font-weight: 600;
+    }
+}
